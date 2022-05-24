@@ -1,0 +1,200 @@
+0a402400a 	0x42    0x6f    0x72    0x64    0x65    0x72    0x20    0x72
+402408:       0x65    0x6c    0x61    0x74    0x69    0x6f    0x6e     0x73
+0x402410:       0x20    0x77    0x69    0x74    0x68    0x20    0x43     0x61
+0x402418:       0x6e    0x61    0x64    0x61    0x20    0x68    0x61     0x76
+0x402420:       0x65    0x20    0x6e    0x65    0x76    0x65    0x72     0x20
+0x402428:       0x62    0x65    0x65    0x6e    0x20    0x62    0x65     0x74
+0x402430:       0x74    0x65    0x72    0x2e    0x00
+
+
+Border relations with Canada have  never been better.
+
+
+<explode_bomb>: %edi : 0x4025a3 
+
+0x4025a3:       0x0a    0x42    0x4f    0x4f    0x4d    0x21    0x21     0x21
+0x4025ab:       0x00
+
+
+\nBOOM!!!
+
+
+<explode_bomb>: %edi : 0x4025ac 
+0x4025ac:       0x54    0x68    0x65    0x20    0x62    0x6f    0x6d     0x62
+0x4025b4:       0x20    0x68    0x61    0x73    0x20    0x62    0x6c     0x6f
+0x4025bc:       0x77    0x6e    0x20    0x75    0x70    0x2e    0x00     
+
+
+The bomb has blown up.
+
+%rsp:0x7fffffffdb50
+
+0x7fffffffdb50: 0x00000001      0x00000002      0x00000004      0x00000008
+0x7fffffffdb60: 0x00000010      0x00000020
+
+<phase_2>:
+	cmpl $0x1,(%rsp) // a[0] = 1
+	je  L2
+
+    .L1:
+	mov -0x4(%rbx),%eax //eax = a[i-1],i >= 1.
+	add %eax,%eax  // eax = 2a[i-1]
+	cmp %eax,(%rbx) //a[i] ?== 2a[i-1]
+
+    .L2:lea 0x4(%rsp),%rbx   //a[i]=m(rbx)=m(rsp+4*i)
+	lea 0x18(%rsp),%rbp  //six numbers take 0x18(4*6)bytes
+	jmp L1
+
+a[i] = 0001b << i 
+
+
+
+
+
+<phase_3>:
+	lea 0xc(%rsp),%rcx  //a[1]
+	lea 0x8(%rsp),%rdx  //a[0]
+	mov $0x4025cf,%esi  //0x4025cf:       "%d %d"
+	callq <_isoc99_sscanf>  //
+	
+	cmpl $0x7,0x8(%rsp)  // 
+	ja L1   	     // if 0<=a[0]<=7(ja-->unsigned)
+     .L1:
+	callq <explode_bomb>
+	mov 0x8(%rsp),%eax  // eax == a[0]
+	jmpq *0x402470(,%rax,8) //m(0x402470+rax*8)
+
+0x402470:       0x0000000000400f7c      0x0000000000400fb9
+                                                                
+0x402480:       0x0000000000400f83      0x0000000000400f8a
+                                                                
+0x402490:       0x0000000000400f91      0x0000000000400f98
+                                                                
+0x4024a0:       0x0000000000400f9f      0x0000000000400fa6
+
+	swicth (%rax)	//add takes on 8 bytes.(%rax*8)
+	case [0,7] --> jmp
+   .RET:
+	add $0x18,%rsp
+	retq
+   .CMP:
+	cmp 0x(%rsp),%eax
+	je  RET
+	callq <explode_bomb>
+	
+	case 0:	
+		mov $0xcf,%eax  
+		cmp 0x(%rsp),%eax  // %eax == a[1] ?
+		je  RET
+		callq <explode_bomb>
+	case 1:	
+		mov $0x137,%eax
+		jmp CMP
+	case 2:	
+		mov $ox2c3,%eax
+		jmp CMP
+	case 3:	
+		mov $0x100,%eax
+		jmp CMP
+	case 4:	
+		mov $0x185,%eax
+		jmp CMP
+	case 5:	
+		mov $0xce,%eax
+		jmp CMP
+	case 6:	
+		mov $0x2aa,%eax	
+		jmp CMP
+	case 7:	
+		mov $0x147,%eax	
+		jmp CMP
+
+0 207
+1 311
+2 707
+3 256
+4 389
+5 206
+6 682
+7 327
+
+<phase_5>:
+0x4024b0 <array.3449>:  0x6d    0x61    0x64    0x75    0x69    0x65     0x72    0x73
+                                                                 0x4024b8 <array.3449+8>:        0x6e    0x66    0x6f    0x74    0x76     0x62    0x79    0x6c
+
+0x40245e:       0x66    0x6c    0x79    0x65    0x72    0x73
+0x40245e:       "flyers"
+
+NO.(9fe567) in 0x4024b0
+
+
+<phase_6>:
+    0<=a[i]-1<=5;
+    a[m] != a[n]; 0<=m,n<=5
+    a[i] = 7 - a[i];
+
+0x6032d0 <node1>:       0x0000014c      0x00000001      0x006032e
+0       0x00000000
+0x6032e0 <node2>:       0x000000a8      0x00000002      0x006032f
+0       0x00000000
+0x6032f0 <node3>:       0x0000039c      0x00000003      0x0060330
+0       0x00000000
+0x603300 <node4>:       0x000002b3      0x00000004      0x0060331
+0       0x00000000
+0x603310 <node5>:       0x000001dd      0x00000005      0x0060332
+0       0x00000000
+0x603320 <node6>:       0x000001bb      0x00000006      0x0000000
+0       0x00000000
+
+
+<rsp+0x20>:
+0x7fffffffdb30: 0x00000000006032f0      0x0000000000603300
+0x7fffffffdb40: 0x0000000000603310      0x0000000000603320
+0x7fffffffdb50: 0x00000000006032d0      0x00000000006032e0
+
+
+
+            +-----------+
+ rsp+0x50   |           |
+ rsp+0x48   | node(2)   |
+ rsp+0x40   | node(1)   |
+ rsp+0x38   | node(6)   |
+ rsp+0x30   | node(5)   |           ^
+ rsp+0x28   | node(4)   |    <--rax |
+ rsp+0x20   | node(3)   |     
+            +-----------+
+        mov 0x20(%rsp),%rbx   //rbx = m(rsp+0x20)=*node(3)
+        lea 0x28(%rsp),%rax   //rax = rsp+0x28
+        lea 0x50(%rsp),%rsi   //rsi = rsp+0x50
+        mov %rbx,rcx          //rcx = rbx=*node(3)
+        mov (%rax),rdx        //rdx = node(rax) = node(4)
+        mov %rdx,0x8(%rcx)    //node(3)->next = *node(4)
+        add $0x8,%rax         //rax++
+        cmp %rsi,rax          //
+        loop ...
+        mov $0x0,0x8(%rdx)    // last_node->next = 0
+0x6032d0 <node1>:       0x0000014c      0x00000001      0x006032e
+0       0x00000000
+0x6032e0 <node2>:       0x000000a8      0x00000002      0x0000000
+0       0x00000000
+0x6032f0 <node3>:       0x0000039c      0x00000003      0x0060330
+0       0x00000000
+0x603300 <node4>:       0x000002b3      0x00000004      0x0060331
+0       0x00000000
+0x603310 <node5>:       0x000001dd      0x00000005      0x0060332
+0       0x00000000
+0x603320 <node6>:       0x000001bb      0x00000006      0x006032d
+0       0x00000000
+
+        mov 0x8(%rbx),rax     //rbx=m(rsp+0x20)=node_head=node(3)
+                              //rax=head_node->next
+        mov (%rax),%eax       //eax = m(node-next)l 
+        cmp %eax,(%rbx)       //m(*node)l >= m(node->next)l
+        jge L1
+        call <explode_bomb>
+    .L1:
+        mov 0x8(%rbx),%rbx   //rbx = *node->next
+
+
+
+

