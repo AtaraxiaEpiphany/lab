@@ -1,0 +1,55 @@
+#phase 3 
+
+cookie = {0x54,0x50,0x44,0x46,0x4f,0x43,0x59,0x41,0x5a,0x53,0x0}
+
+movl   $0x46445054,-0x1b(%ebp 
+movl   $0x4159434f,-0x17(%ebp)
+movw   $0x535a,-0x13(%ebp)
+
+// loop 10 times : 
+
+data = cookie[i]
+switch (cookie[i]-0x41){
+    
+    //set some value
+    //case x : data = some value;break
+    default : break ;//  cmp $0x19,%eax
+}
+    output[i] = data;
+   
+
+ Offset     Info    Type            Sym.Value  Sym. Name
+ 00000075  00000701 R_386_32          00000000   .rodata
+
+             0x75
+72:   8b 04 85 04 00 00 00    mov    0x4(,%eax,4),%eax 
+
+Hex dump of section '.rodata': // 
+ NOTE: This section has relocations against it, but these have NOT been applied to this dump.
+                       | 
+    0x00000000 33000000|b7000000 c9000000 db000000 3...............                     |
+    0x00000010 ff000000 c3000000 d5000000 8d000000 ................
+    0x00000020 f9000000 9f000000 7b000000 17010000 ........{.......
+    0x00000030 84000000 1d010000 e7000000 ed000000 ................
+    0x00000040 96000000 e1000000 a5000000 b1000000 ................
+    0x00000050 bd000000 11010000 f3000000 ab000000 ................
+    0x00000060 0b010000 05010000 cf000000          ............
+               
+
+72:   8b 04 85 04 00 00 00    mov    0x4(,%eax,4),%eax 
+
+jmp *((cookie[i]-0x41)*4)
+
+cookie[0]:0x54
+jmp *(0x13*4 : 4c)  : //relative to (.rodata+0x4)
+//0x4c+0x4 : 0x50   : bd
+
+##in phase3.s
+
+bd:   c6 45 f7 38             movb   $0x38,-0x9(%ebp) //
+
+
+
+
+
+

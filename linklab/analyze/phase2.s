@@ -57,17 +57,17 @@ Disassembly of section .text:
   a1:	89 e5                	mov    %esp,%ebp
   a3:	83 ec 08             	sub    $0x8,%esp
   a6:	83 ec 08             	sub    $0x8,%esp
-  a9:	68 02 00 00 00       	push   $0x2 #<.radata>
-  ae:	ff 75 08             	pushl  0x8(%ebp)
+  a9:	68 02 00 00 00       	push   $0x2 #<.rodata>:srtring1
+  ae:	ff 75 08             	pushl  0x8(%ebp)#string2
   b1:	e8 fc ff ff ff       	call   b2 <AFPQyOcF+0x12> #<strcmp>
   b6:	83 c4 10             	add    $0x10,%esp
-  b9:	85 c0                	test   %eax,%eax
+  b9:	85 c0                	test   %eax,%eax//zf=0,eax!=0;jne
   bb:	75 10                	jne    cd <AFPQyOcF+0x2d>
   bd:	83 ec 0c             	sub    $0xc,%esp
   c0:	ff 75 0c             	pushl  0xc(%ebp)
   c3:	e8 fc ff ff ff       	call   c4 <AFPQyOcF+0x24> #<puts>
   c8:	83 c4 10             	add    $0x10,%esp
-  cb:	eb 01                	jmp    ce <AFPQyOcF+0x2e>
+  cb:	eb 01                	jmp    ce <AFPQyocF+0x2e>
   cd:	90                   	nop
   ce:	c9                   	leave  
   cf:	c3                   	ret    
