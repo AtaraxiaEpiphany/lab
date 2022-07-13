@@ -1,0 +1,609 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	PA/IFDEF.c	4;"	d	file:
+ARRAY_SIZE	PA/regex.c	7;"	d	file:
+ARRAY_SIZE	include/reg.h	7;"	d
+ARRLEN	include/debug_macro.h	14;"	d
+ARRLEN	include/macro.h	14;"	d
+ARRLEN	include/sdb.h	15;"	d
+Assert	include/debug_macro.h	69;"	d
+BITMASK	include/macro.h	71;"	d
+BITS	include/macro.h	72;"	d
+C	PA/IFDEF.c	6;"	d	file:
+CHOOSE2nd	include/debug_macro.h	23;"	d
+CHOOSE2nd	include/macro.h	25;"	d
+CONFIG_CC	include/autoconf.h	24;"	d
+CONFIG_CC_DEBUG	include/autoconf.h	26;"	d
+CONFIG_CC_GCC	include/autoconf.h	28;"	d
+CONFIG_CC_O2	include/autoconf.h	12;"	d
+CONFIG_CC_OPT	include/autoconf.h	21;"	d
+CONFIG_DIFFTEST_REF_NAME	include/autoconf.h	7;"	d
+CONFIG_DIFFTEST_REF_PATH	include/autoconf.h	25;"	d
+CONFIG_ENGINE	include/autoconf.h	8;"	d
+CONFIG_ENGINE_INTERPRETER	include/autoconf.h	20;"	d
+CONFIG_ISA	include/autoconf.h	30;"	d
+CONFIG_ISA_riscv32	include/autoconf.h	16;"	d
+CONFIG_ITRACE	include/autoconf.h	15;"	d
+CONFIG_ITRACE_COND	include/autoconf.h	23;"	d
+CONFIG_MBASE	include/autoconf.h	18;"	d
+CONFIG_MEM_RANDOM	include/autoconf.h	14;"	d
+CONFIG_MODE_SYSTEM	include/autoconf.h	13;"	d
+CONFIG_MSIZE	include/autoconf.h	11;"	d
+CONFIG_PC_RESET_OFFSET	include/autoconf.h	9;"	d
+CONFIG_RT_CHECK	include/autoconf.h	22;"	d
+CONFIG_TARGET_NATIVE_ELF	include/autoconf.h	10;"	d
+CONFIG_TIMER_GETTIMEOFDAY	include/autoconf.h	19;"	d
+CONFIG_TRACE	include/autoconf.h	29;"	d
+CONFIG_TRACE_END	include/autoconf.h	17;"	d
+CONFIG_TRACE_START	include/autoconf.h	27;"	d
+DEFINE	PA/logic.c	6;"	d	file:
+DET	makefile	/^DET := $(shell if [ ! -d "target file" ];then mkdir "target file"; fi)$/;"	m
+DIR	makefile	/^DIR := $(shell if [ ! -d "objdump" ];then mkdir "objdump"; fi\\$/;"	m
+Dest	makefile	/^Dest := $(patsubst %.c,%.o,$(Srcs))$/;"	m
+Disassembly	Lab/bomb/disassemble.s	/^Disassembly of section .fini:$/;"	l
+Disassembly	Lab/bomb/disassemble.s	/^Disassembly of section .init:$/;"	l
+Disassembly	Lab/bomb/disassemble.s	/^Disassembly of section .plt:$/;"	l
+Disassembly	Lab/bomb/disassemble.s	/^Disassembly of section .text:$/;"	l
+Disassembly	Lab/buflab/answer/hex2raw.s	/^Disassembly of section .fini:$/;"	l
+Disassembly	Lab/buflab/answer/hex2raw.s	/^Disassembly of section .init:$/;"	l
+Disassembly	Lab/buflab/answer/hex2raw.s	/^Disassembly of section .plt.got:$/;"	l
+Disassembly	Lab/buflab/answer/hex2raw.s	/^Disassembly of section .plt:$/;"	l
+Disassembly	Lab/buflab/answer/hex2raw.s	/^Disassembly of section .text:$/;"	l
+Disassembly	Lab/buflab/answer/makecookie.s	/^Disassembly of section .fini:$/;"	l
+Disassembly	Lab/buflab/answer/makecookie.s	/^Disassembly of section .init:$/;"	l
+Disassembly	Lab/buflab/answer/makecookie.s	/^Disassembly of section .plt.got:$/;"	l
+Disassembly	Lab/buflab/answer/makecookie.s	/^Disassembly of section .plt:$/;"	l
+Disassembly	Lab/buflab/answer/makecookie.s	/^Disassembly of section .text:$/;"	l
+Disassembly	Lab/buflab/bufbomb.s	/^Disassembly of section .fini:$/;"	l
+Disassembly	Lab/buflab/bufbomb.s	/^Disassembly of section .init:$/;"	l
+Disassembly	Lab/buflab/bufbomb.s	/^Disassembly of section .plt:$/;"	l
+Disassembly	Lab/buflab/bufbomb.s	/^Disassembly of section .text:$/;"	l
+Disassembly	linklab/analyze/phase1.s	/^Disassembly of section .text:$/;"	l
+Disassembly	linklab/analyze/phase2.s	/^Disassembly of section .text:$/;"	l
+Disassembly	linklab/analyze/phase3.s	/^Disassembly of section .text:$/;"	l
+Disassembly	linklab/phase4.s	/^Disassembly of section .comment:$/;"	l
+Disassembly	linklab/phase4.s	/^Disassembly of section .data:$/;"	l
+Disassembly	linklab/phase4.s	/^Disassembly of section .eh_frame:$/;"	l
+Disassembly	linklab/phase4.s	/^Disassembly of section .rodata:$/;"	l
+Disassembly	linklab/phase4.s	/^Disassembly of section .text:$/;"	l
+Frame	PA/hanoi-nr.c	/^} Frame;$/;"	t	typeref:struct:__anon10	file:
+Frame	PA/strtol.c	/^} Frame;$/;"	t	typeref:struct:__anon11	file:
+Frame	executale file/hanoi-nr.c	/^} Frame;$/;"	t	typeref:struct:__anon5	file:
+IFDEF	include/debug_macro.h	61;"	d
+IFDEF	include/macro.h	56;"	d
+IFNDEF	include/debug_macro.h	63;"	d
+IFNDEF	include/macro.h	58;"	d
+IFONE	include/debug_macro.h	65;"	d
+IFONE	include/macro.h	60;"	d
+IFZERO	include/debug_macro.h	67;"	d
+IFZERO	include/macro.h	62;"	d
+ISDEF	include/debug_macro.h	40;"	d
+ISDEF	include/macro.h	40;"	d
+ISNDEF	include/debug_macro.h	42;"	d
+ISNDEF	include/macro.h	42;"	d
+ISONE	include/debug_macro.h	44;"	d
+ISONE	include/macro.h	44;"	d
+ISZERO	include/debug_macro.h	46;"	d
+ISZERO	include/macro.h	46;"	d
+MAP	include/macro.h	69;"	d
+MBASE	PA/overload.c	8;"	d	file:
+MBASE	include/sdb.h	12;"	d
+MSIZE	PA/overload.c	9;"	d	file:
+MSIZE	include/sdb.h	11;"	d
+MUXDEF	include/debug_macro.h	34;"	d
+MUXDEF	include/macro.h	34;"	d
+MUXNDEF	include/debug_macro.h	35;"	d
+MUXNDEF	include/macro.h	35;"	d
+MUXONE	include/debug_macro.h	36;"	d
+MUXONE	include/macro.h	36;"	d
+MUXZERO	include/debug_macro.h	37;"	d
+MUXZERO	include/macro.h	37;"	d
+MUX_MACRO_PROPERTY	include/debug_macro.h	25;"	d
+MUX_MACRO_PROPERTY	include/macro.h	27;"	d
+MUX_WITH_COMMA	include/debug_macro.h	24;"	d
+MUX_WITH_COMMA	include/macro.h	26;"	d
+NR_CMD	reg.c	194;"	d	file:
+NR_REGEX	PA/regex.c	8;"	d	file:
+NR_REGEX	include/reg.h	8;"	d
+NR_REGEX	reg.c	14;"	d	file:
+N_CMD	include/sdb.h	16;"	d
+OBJ	makefile	/^OBJ := $(shell if [ ! -d "executale file" ];then mkdir "executale file"; fi)$/;"	m
+Objs	makefile	/^Objs := $(Srcs:.c=)$/;"	m
+PC_RESET_OFFSET	include/sdb.h	13;"	d
+PG_ALIGN	include/macro.h	78;"	d
+PRINT	PA/logic.c	8;"	d	file:
+PRINT	PA/macro.c	18;"	d	file:
+Print	PA/IFDEF.c	/^void Print(){$/;"	f
+REGS_FOREACH	PA/logic.c	3;"	d	file:
+RESET_VECTOR	include/sdb.h	14;"	d
+ROUNDDOWN	include/macro.h	76;"	d
+ROUNDUP	include/macro.h	75;"	d
+RUN_LOGIC	PA/logic.c	4;"	d	file:
+SEXT	include/macro.h	73;"	d
+SRC	makefile	/^SRC := $(shell if [ ! -d "sources" ];then mkdir "sources"; fi)$/;"	m
+STRLEN	include/debug_macro.h	11;"	d
+STRLEN	include/macro.h	11;"	d
+Srcs	makefile	/^Srcs := $(wildcard *.c) $/;"	m
+T1	PA/IFDEF.c	3;"	d	file:
+T1	PA/macro.c	8;"	d	file:
+T2	PA/macro.c	10;"	d	file:
+TEST	sources/macro.c	4;"	d	file:
+TK_EQ	PA/regex.c	/^    TK_EQ,$/;"	e	enum:__anon8	file:
+TK_EQ	include/reg.h	/^    TK_EQ,$/;"	e	enum:__anon3
+TK_EQ	reg.c	/^    TK_EQ,$/;"	e	enum:__anon1	file:
+TK_FLT	PA/regex.c	/^    TK_FLT,$/;"	e	enum:__anon8	file:
+TK_FLT	reg.c	/^    TK_FLT,$/;"	e	enum:__anon1	file:
+TK_INT	PA/regex.c	/^    TK_INT,$/;"	e	enum:__anon8	file:
+TK_INT	reg.c	/^    TK_INT,$/;"	e	enum:__anon1	file:
+TK_NOTYPE	PA/regex.c	/^    TK_NOTYPE = 256,$/;"	e	enum:__anon8	file:
+TK_NOTYPE	include/reg.h	/^    TK_NOTYPE = 256,$/;"	e	enum:__anon3
+TK_NOTYPE	reg.c	/^    TK_NOTYPE = 256,$/;"	e	enum:__anon1	file:
+TK_NUM	include/reg.h	/^    TK_NUM,$/;"	e	enum:__anon3
+TODO	include/debug_macro.h	81;"	d
+TRACE	PA/macro.c	13;"	d	file:
+TRACE_STRINGIFY	PA/macro.c	12;"	d	file:
+Token	reg.c	/^} Token;$/;"	t	typeref:struct:token	file:
+U	PA/IFDEF.c	7;"	d	file:
+UPDATE	PA/logic.c	7;"	d	file:
+ValidN	include/validN.h	/^}ValidN;$/;"	t	typeref:struct:__anon4
+Valid_num	PA/valid_num.c	/^}Valid_num;$/;"	t	typeref:struct:__anon9	file:
+Z	PA/IFDEF.c	5;"	d	file:
+_32	PA/info.c	/^        uint32_t _32;$/;"	m	union:__anon6::__anon7	file:
+__IGNORE	include/debug_macro.h	57;"	d
+__IGNORE	include/macro.h	53;"	d
+__KEEP	include/debug_macro.h	58;"	d
+__KEEP	include/macro.h	54;"	d
+__MACRO_H__	include/debug_macro.h	2;"	d
+__MACRO_H__	include/macro.h	2;"	d
+__P_DEF_0	include/debug_macro.h	28;"	d
+__P_DEF_0	include/macro.h	29;"	d
+__P_DEF_1	include/debug_macro.h	29;"	d
+__P_DEF_1	include/macro.h	30;"	d
+__P_ONE_1	include/debug_macro.h	30;"	d
+__P_ONE_1	include/macro.h	31;"	d
+__P_ZERO_0	include/debug_macro.h	31;"	d
+__P_ZERO_0	include/macro.h	32;"	d
+a	linklab/analyze/phase3.s	/^   a:	90                   	nop$/;"	l
+a	linklab/phase4.s	/^   a:	69 61 6e 20 38 2e 33 	imul   $0x332e3820,0x6e(%ecx),%esp$/;"	l
+a0	linklab/analyze/phase2.s	/^  a0:	55                   	push   %ebp$/;"	l
+a0	linklab/phase4.s	/^  a0:	23 51 2b             	and    0x2b(%ecx),%edx$/;"	l
+a1	linklab/analyze/phase2.s	/^  a1:	89 e5                	mov    %esp,%ebp$/;"	l
+a1	linklab/phase4.s	/^  a1:	8b 04 85 00 00 00 00 	mov    0x0(,%eax,4),%eax \/\/$/;"	l
+a3	linklab/analyze/phase2.s	/^  a3:	83 ec 08             	sub    $0x8,%esp$/;"	l
+a3	linklab/analyze/phase3.s	/^  a3:	eb 7d                	jmp    122 <do_phase+0xf8>$/;"	l
+a3	linklab/phase4.s	/^  a3:	56                   	push   %esi$/;"	l
+a4	linklab/phase4.s	/^  a4:	35 5a 38 5c 2c       	xor    $0x2c5c385a,%eax$/;"	l
+a5	linklab/analyze/phase3.s	/^  a5:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp) \/\/$/;"	l
+a5	linklab/phase4.s	/^  a5:	00 00                	add    %al,(%eax)$/;"	l
+a6	linklab/analyze/phase2.s	/^  a6:	83 ec 08             	sub    $0x8,%esp$/;"	l
+a7	linklab/phase4.s	/^  a7:	00 00                	add    %al,(%eax)$/;"	l
+a8	linklab/phase4.s	/^  a8:	f7 d0                	not    %eax$/;"	l
+a9	linklab/analyze/phase2.s	/^  a9:	68 02 00 00 00       	push   $0x2 #<.rodata>:srtring1$/;"	l
+a9	linklab/analyze/phase3.s	/^  a9:	eb 77                	jmp    122 <do_phase+0xf8>$/;"	l
+a9	linklab/phase4.s	/^  a9:	3c 72                	cmp    $0x72,%al$/;"	l
+a9	linklab/phase4.s	/^  a9:	41                   	inc    %ecx$/;"	l
+aa	linklab/phase4.s	/^  aa:	0e                   	push   %cs$/;"	l
+aa	linklab/phase4.s	/^  aa:	21 45 08             	and    %eax,0x8(%ebp)$/;"	l
+ab	linklab/analyze/phase3.s	/^  ab:	c6 45 f7 64          	movb   $0x64,-0x9(%ebp) \/\/d$/;"	l
+ab	linklab/phase4.s	/^  ab:	08 85 02 42 0d 05    	or     %al,0x50d4202(%ebp)$/;"	l
+ab	linklab/phase4.s	/^  ab:	6c                   	insb   (%dx),%es:(%edi)$/;"	l
+ac	linklab/phase4.s	/^  ac:	7c 27                	jl     d5 <KvXOBb+0x55>$/;"	l
+ad	linklab/phase4.s	/^  ad:	eb 45                	jmp    f4 <transform_code+0x8d>$/;"	l
+add	sources/add.c	/^int add (int x,int y){$/;"	f
+ae	linklab/analyze/phase2.s	/^  ae:	ff 75 08             	pushl  0x8(%ebp)#string2$/;"	l
+ae	linklab/phase4.s	/^  ae:	2f                   	das    $/;"	l
+af	linklab/analyze/phase3.s	/^  af:	eb 71                	jmp    122 <do_phase+0xf8>$/;"	l
+af	linklab/phase4.s	/^  af:	79 26                	jns    d7 <KvXOBb+0x57>$/;"	l
+af	linklab/phase4.s	/^  af:	8b 45 0c             	mov    0xc(%ebp),%eax$/;"	l
+b	linklab/analyze/phase1.s	/^   b:	83 ec 0c             	sub    $0xc,%esp$/;"	l
+b	linklab/analyze/phase3.s	/^   b:	90                   	nop$/;"	l
+b	linklab/phase4.s	/^   b:	00 01                	add    %al,(%ecx)$/;"	l
+b	linklab/phase4.s	/^   b:	4e                   	dec    %esi$/;"	l
+b1	linklab/analyze/phase2.s	/^  b1:	e8 fc ff ff ff       	call   b2 <AFPQyOcF+0x12> #<strcmp>$/;"	l
+b1	linklab/analyze/phase3.s	/^  b1:	c6 45 f7 5a          	movb   $0x5a,-0x9(%ebp) \/\/Z$/;"	l
+b1	linklab/phase4.s	/^  b1:	02 83 c5 0c 04 04    	add    0x4040cc5(%ebx),%al$/;"	l
+b1	linklab/phase4.s	/^  b1:	4a                   	dec    %edx$/;"	l
+b2	linklab/phase4.s	/^  b2:	30 61 4b             	xor    %ah,0x4b(%ecx)$/;"	l
+b2	linklab/phase4.s	/^  b2:	8b 04 85 00 00 00 00 	mov    0x0(,%eax,4),%eax  \/\/CMKbeL$/;"	l
+b5	linklab/analyze/phase3.s	/^  b5:	eb 6b                	jmp    122 <do_phase+0xf8>$/;"	l
+b5	linklab/phase4.s	/^  b5:	5b                   	pop    %ebx$/;"	l
+b6	linklab/analyze/phase2.s	/^  b6:	83 c4 10             	add    $0x10,%esp$/;"	l
+b6	linklab/phase4.s	/^  b6:	32 37                	xor    (%edi),%dh$/;"	l
+b7	linklab/analyze/phase3.s	/^  b7:	c6 45 f7 4a          	movb   $0x4a,-0x9(%ebp) \/\/J$/;"	l
+b7	linklab/phase4.s	/^  b7:	00 1c 00             	add    %bl,(%eax,%eax,1)$/;"	l
+b8	linklab/phase4.s	/^  b8:	24 66                	and    $0x66,%al$/;"	l
+b9	linklab/analyze/phase2.s	/^  b9:	85 c0                	test   %eax,%eax\/\/zf=0,eax!=0;jne$/;"	l
+b9	linklab/phase4.s	/^  b9:	c1 e0 08             	shl    $0x8,%eax$/;"	l
+ba	linklab/phase4.s	/^  ba:	00 00                	add    %al,(%eax)$/;"	l
+ba	linklab/phase4.s	/^  ba:	29 7b 3a             	sub    %edi,0x3a(%ebx)$/;"	l
+base	PA/valid_num.c	/^    int base;$/;"	m	struct:__anon9	file:
+base	include/validN.h	/^    int base; \/\/the base of the original number.$/;"	m	struct:__anon4
+bb	linklab/analyze/phase2.s	/^  bb:	75 10                	jne    cd <AFPQyOcF+0x2d>$/;"	l
+bb	linklab/analyze/phase3.s	/^  bb:	eb 65                	jmp    122 <do_phase+0xf8>$/;"	l
+bc	linklab/phase4.s	/^  bc:	09 45 08             	or     %eax,0x8(%ebp)$/;"	l
+bc	linklab/phase4.s	/^  bc:	bc 00 00 00 44       	mov    $0x44000000,%esp$/;"	l
+bd	linklab/analyze/phase2.s	/^  bd:	83 ec 0c             	sub    $0xc,%esp$/;"	l
+bd	linklab/analyze/phase3.s	/^  bd:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp) \/\/$/;"	l
+bd	linklab/phase4.s	/^  bd:	7e 63                	jle    122 <generate_code+0x29>$/;"	l
+bf	linklab/phase4.s	/^  bf:	22 41 4e             	and    0x4e(%ecx),%al$/;"	l
+bf	linklab/phase4.s	/^  bf:	eb 33                	jmp    f4 <transform_code+0x8d>$/;"	l
+bomb	Lab/bomb/disassemble.s	/^bomb:     file format elf64-x86-64$/;"	l
+bomb	Lab/bomb/phase_4.c	/^void bomb(){$/;"	f
+bomb	sources/phase_4.c	/^void bomb(){$/;"	f
+bool	reg.c	11;"	d	file:
+buf	linklab/link/main.c	/^int buf[2] = {1,2};$/;"	v
+bufbomb	Lab/buflab/bufbomb.s	/^bufbomb:     file format elf32-i386$/;"	l
+bufp0	linklab/link/swap.c	/^int *bufp0 = &buf[0];  \/\/ Ndx =6:.data.rel $/;"	v
+bufp1	linklab/link/swap.c	/^static int *bufp1;   \/\/ Ndx = 5: .bss$/;"	v	file:
+c	linklab/analyze/phase3.s	/^   c:	90                   	nop$/;"	l
+c	linklab/phase4.s	/^   c:	3d fe 1a d3 a0       	cmp    $0xa0d31afe,%eax$/;"	l
+c0	linklab/analyze/phase2.s	/^  c0:	ff 75 0c             	pushl  0xc(%ebp)$/;"	l
+c1	linklab/analyze/phase3.s	/^  c1:	eb 5f                	jmp    122 <do_phase+0xf8>$/;"	l
+c1	linklab/phase4.s	/^  c1:	02 00                	add    (%eax),%al$/;"	l
+c1	linklab/phase4.s	/^  c1:	8b 45 0c             	mov    0xc(%ebp),%eax$/;"	l
+c2	linklab/phase4.s	/^  c2:	5d                   	pop    %ebp$/;"	l
+c3	linklab/analyze/phase2.s	/^  c3:	e8 fc ff ff ff       	call   c4 <AFPQyOcF+0x24> #<puts>$/;"	l
+c3	linklab/analyze/phase3.s	/^  c3:	c6 45 f7 4e          	movb   $0x4e,-0x9(%ebp) \/\/N$/;"	l
+c3	linklab/phase4.s	/^  c3:	00 38                	add    %bh,(%eax)$/;"	l
+c3	linklab/phase4.s	/^  c3:	71 28                	jno    ed <KvXOBb+0x6d>$/;"	l
+c4	linklab/phase4.s	/^  c4:	8b 04 85 00 00 00 00 	mov    0x0(,%eax,4),%eax$/;"	l
+c5	linklab/phase4.s	/^  c5:	00 00                	add    %al,(%eax)$/;"	l
+c5	linklab/phase4.s	/^  c5:	54                   	push   %esp$/;"	l
+c6	linklab/phase4.s	/^  c6:	68 59 50 33 57       	push   $0x57335059$/;"	l
+c7	linklab/analyze/phase3.s	/^  c7:	eb 59                	jmp    122 <do_phase+0xf8>$/;"	l
+c7	linklab/phase4.s	/^  c7:	00 00                	add    %al,(%eax)$/;"	l
+c8	linklab/analyze/phase2.s	/^  c8:	83 c4 10             	add    $0x10,%esp$/;"	l
+c9	linklab/analyze/phase3.s	/^  c9:	c6 45 f7 34          	movb   $0x34,-0x9(%ebp)$/;"	l
+c9	linklab/phase4.s	/^  c9:	41                   	inc    %ecx$/;"	l
+ca	linklab/phase4.s	/^  ca:	0e                   	push   %cs$/;"	l
+call	PA/hanoi-nr.c	8;"	d	file:
+call	executale file/hanoi-nr.c	8;"	d	file:
+call	linklab/analyze/assemble.s	/^call  0x9cffffff    #<d0> do_phase offset=0xa0-pc:0x34$/;"	l
+cb	linklab/analyze/phase2.s	/^  cb:	eb 01                	jmp    ce <AFPQyocF+0x2e>$/;"	l
+cb	linklab/phase4.s	/^  cb:	08 85 02 42 0d 05    	or     %al,0x50d4202(%ebp)$/;"	l
+cb	linklab/phase4.s	/^  cb:	31 45 08             	xor    %eax,0x8(%ebp)$/;"	l
+cb	linklab/phase4.s	/^  cb:	4c                   	dec    %esp$/;"	l
+cc	linklab/phase4.s	/^  cc:	6d                   	insl   (%dx),%es:(%edi)$/;"	l
+cd	linklab/analyze/phase2.s	/^  cd:	90                   	nop$/;"	l
+cd	linklab/analyze/phase3.s	/^  cd:	eb 53                	jmp    122 <do_phase+0xf8>$/;"	l
+cd	linklab/phase4.s	/^  cd:	6b 69 21 65          	imul   $0x65,0x21(%ecx),%ebp$/;"	l
+ce	linklab/analyze/phase2.s	/^  ce:	c9                   	leave  $/;"	l
+ce	linklab/phase4.s	/^  ce:	eb 24                	jmp    f4 <transform_code+0x8d>$/;"	l
+cf	linklab/analyze/phase2.s	/^  cf:	c3                   	ret    $/;"	l
+cf	linklab/analyze/phase3.s	/^  cf:	c6 45 f7 69          	movb   $0x69,-0x9(%ebp) \/\/i$/;"	l
+cmd_c	reg.c	/^static int cmd_c(char *args) {$/;"	f	file:
+cmd_help	reg.c	/^static int cmd_help(char *args) {$/;"	f	file:
+cmd_info	reg.c	/^static int cmd_info(char *args) {$/;"	f	file:
+cmd_p	reg.c	/^static int cmd_p(char *args){$/;"	f	file:
+cmd_q	reg.c	/^static int cmd_q(char *args) { return -1; }$/;"	f	file:
+cmd_s	reg.c	/^static int cmd_s(char *args) {$/;"	f	file:
+cmd_table	reg.c	/^} cmd_table[] = {$/;"	v	typeref:struct:__anon2	file:
+cmd_x	reg.c	/^static int cmd_x(char *args){$/;"	f	file:
+concat	include/debug_macro.h	18;"	d
+concat	include/macro.h	18;"	d
+concat3	include/debug_macro.h	19;"	d
+concat3	include/macro.h	19;"	d
+concat4	include/debug_macro.h	20;"	d
+concat4	include/macro.h	20;"	d
+concat5	include/macro.h	21;"	d
+concat_temp	include/debug_macro.h	17;"	d
+concat_temp	include/macro.h	17;"	d
+cpu	PA/info.c	/^riscv32_CPU_state cpu;$/;"	v
+cpu_init	PA/info.c	/^void cpu_init(){$/;"	f
+custom	reg.c	/^    int (*custom)(char *);$/;"	m	struct:__anon2	file:
+d	linklab/analyze/phase2.s	/^   d:	c7 45 bf 55 37 6b 78 	movl   $0x786b3755,-0x41(%ebp)$/;"	l
+d	linklab/analyze/phase3.s	/^   d:	90                   	nop$/;"	l
+d	linklab/phase4.s	/^   d:	7c 08                	jl     17 <.eh_frame+0x17>$/;"	l
+d	linklab/phase4.s	/^   d:	c7 45 e0 54 6f 68 66 	movl   $0x66686f54,-0x20(%ebp)$/;"	l
+d0	linklab/analyze/phase2.s	/^  d0:	55                   	push   %ebp$/;"	l
+d0	linklab/phase4.s	/^  d0:	8b 45 0c             	mov    0xc(%ebp),%eax$/;"	l
+d1	linklab/analyze/phase2.s	/^  d1:	89 e5                	mov    %esp,%ebp$/;"	l
+d1	linklab/phase4.s	/^  d1:	3b 74 5e 4f          	cmp    0x4f(%esi,%ebx,2),%esi$/;"	l
+d1	linklab/phase4.s	/^  d1:	74 c5                	je     98 <.eh_frame+0x98>$/;"	l
+d3	linklab/analyze/phase2.s	/^  d3:	90                   	nop$/;"	l
+d3	linklab/analyze/phase3.s	/^  d3:	eb 4d                	jmp    122 <do_phase+0xf8>$/;"	l
+d3	linklab/phase4.s	/^  d3:	0c 04                	or     $0x4,%al$/;"	l
+d3	linklab/phase4.s	/^  d3:	8b 04 85 00 00 00 00 	mov    0x0(,%eax,4),%eax$/;"	l
+d4	linklab/analyze/phase2.s	/^  d4:	90                   	nop$/;"	l
+d5	linklab/analyze/phase2.s	/^  d5:	90                   	nop$/;"	l
+d5	linklab/analyze/phase3.s	/^  d5:	c6 45 f7 72          	movb   $0x72,-0x9(%ebp) \/\/r$/;"	l
+d5	linklab/phase4.s	/^  d5:	04 00                	add    $0x0,%al$/;"	l
+d5	linklab/phase4.s	/^  d5:	2e 40                	cs inc %eax$/;"	l
+d6	linklab/analyze/phase2.s	/^  d6:	90                   	nop$/;"	l
+d7	linklab/analyze/phase2.s	/^  d7:	90                   	nop$/;"	l
+d7	linklab/phase4.s	/^  d7:	76 49                	jbe    122 <generate_code+0x29>$/;"	l
+d8	linklab/analyze/phase2.s	/^  d8:	90                   	nop$/;"	l
+d9	linklab/analyze/phase2.s	/^  d9:	90                   	nop$/;"	l
+d9	linklab/analyze/phase3.s	/^  d9:	eb 47                	jmp    122 <do_phase+0xf8>$/;"	l
+d9	linklab/phase4.s	/^  d9:	3e 64 31 45 60       	ds xor %eax,%fs:0x60(%ebp)$/;"	l
+da	linklab/analyze/phase2.s	/^  da:	90                   	nop$/;"	l
+da	linklab/phase4.s	/^  da:	f7 d0                	not    %eax$/;"	l
+db	linklab/analyze/phase2.s	/^  db:	90                   	nop$/;"	l
+db	linklab/analyze/phase3.s	/^  db:	c6 45 f7 77          	movb   $0x77,-0x9(%ebp) \/\/w$/;"	l
+dc	linklab/analyze/phase2.s	/^  dc:	90                   	nop$/;"	l
+dc	linklab/phase4.s	/^  dc:	09 45 08             	or     %eax,0x8(%ebp)$/;"	l
+dd	linklab/analyze/phase2.s	/^  dd:	90                   	nop$/;"	l
+de	linklab/analyze/phase2.s	/^  de:	90                   	nop$/;"	l
+de	linklab/phase4.s	/^  de:	52                   	push   %edx$/;"	l
+description	reg.c	/^    const char *description;$/;"	m	struct:__anon2	file:
+df	linklab/analyze/phase2.s	/^  df:	90                   	nop$/;"	l
+df	linklab/analyze/phase3.s	/^  df:	eb 41                	jmp    122 <do_phase+0xf8>$/;"	l
+df	linklab/phase4.s	/^  df:	39 3d 55 4d 78 2d    	cmp    %edi,0x2d784d55$/;"	l
+df	linklab/phase4.s	/^  df:	eb 13                	jmp    f4 <transform_code+0x8d>$/;"	l
+e	linklab/analyze/phase1.s	/^   e:	50                   	push   %eax          $/;"	l
+e	linklab/analyze/phase3.s	/^   e:	90                   	nop$/;"	l
+e0	linklab/analyze/phase2.s	/^  e0:	90                   	nop$/;"	l
+e1	linklab/analyze/phase2.s	/^  e1:	90                   	nop$/;"	l
+e1	linklab/analyze/phase3.s	/^  e1:	c6 45 f7 37          	movb   $0x37,-0x9(%ebp)$/;"	l
+e1	linklab/phase4.s	/^  e1:	8b 45 0c             	mov    0xc(%ebp),%eax$/;"	l
+e2	linklab/analyze/phase2.s	/^  e2:	90                   	nop$/;"	l
+e3	linklab/analyze/phase2.s	/^  e3:	90                   	nop$/;"	l
+e4	linklab/analyze/phase2.s	/^  e4:	90                   	nop$/;"	l
+e4	linklab/phase4.s	/^  e4:	8b 04 85 00 00 00 00 	mov    0x0(,%eax,4),%eax$/;"	l
+e5	linklab/analyze/phase2.s	/^  e5:	90                   	nop$/;"	l
+e5	linklab/analyze/phase3.s	/^  e5:	eb 3b                	jmp    122 <do_phase+0xf8>$/;"	l
+e5	linklab/phase4.s	/^  e5:	36 5f                	ss pop %edi$/;"	l
+e6	linklab/analyze/phase2.s	/^  e6:	90                   	nop$/;"	l
+e7	linklab/analyze/phase2.s	/^  e7:	90                   	nop$/;"	l
+e7	linklab/analyze/phase3.s	/^  e7:	c6 45 f7 2d          	movb   $0x2d,-0x9(%ebp) \/\/-$/;"	l
+e7	linklab/phase4.s	/^  e7:	2a 73 20             	sub    0x20(%ebx),%dh$/;"	l
+e8	linklab/analyze/phase2.s	/^  e8:	90                   	nop$/;"	l
+e9	linklab/analyze/phase2.s	/^  e9:	90                   	nop$/;"	l
+ea	linklab/analyze/phase2.s	/^  ea:	90                   	nop$/;"	l
+ea	linklab/phase4.s	/^  ea:	42                   	inc    %edx$/;"	l
+eb	linklab/analyze/phase2.s	/^  eb:	90                   	nop$/;"	l
+eb	linklab/analyze/phase3.s	/^  eb:	eb 35                	jmp    122 <do_phase+0xf8>$/;"	l
+eb	linklab/phase4.s	/^  eb:	01 45 08             	add    %eax,0x8(%ebp)$/;"	l
+eb	linklab/phase4.s	/^  eb:	3f                   	aas    $/;"	l
+ec	linklab/analyze/phase2.s	/^  ec:	90                   	nop$/;"	l
+ec	linklab/phase4.s	/^  ec:	43                   	inc    %ebx$/;"	l
+ed	linklab/analyze/phase2.s	/^  ed:	90                   	nop$/;"	l
+ed	linklab/analyze/phase3.s	/^  ed:	c6 45 f7 61          	movb   $0x61,-0x9(%ebp) \/\/a$/;"	l
+ed	linklab/phase4.s	/^  ed:	47                   	inc    %edi$/;"	l
+ee	linklab/analyze/phase2.s	/^  ee:	90                   	nop$/;"	l
+ee	linklab/phase4.s	/^  ee:	44                   	inc    %esp$/;"	l
+ee	linklab/phase4.s	/^  ee:	eb 04                	jmp    f4 <transform_code+0x8d>$/;"	l
+ef	linklab/analyze/phase2.s	/^  ef:	90                   	nop$/;"	l
+ef	linklab/phase4.s	/^  ef:	70 25                	jo     116 <generate_code+0x1d>$/;"	l
+f	linklab/analyze/phase1.s	/^   f:	e8 fc ff ff ff       	call   10 <do_phase+0x10>   # puts$/;"	l
+f	linklab/analyze/phase3.s	/^   f:	90                   	nop$/;"	l
+f	linklab/phase4.s	/^   f:	01 1b                	add    %ebx,(%ebx)$/;"	l
+f0	linklab/analyze/phase2.s	/^  f0:	90                   	nop$/;"	l
+f0	linklab/phase4.s	/^  f0:	f7 5d 08             	negl   0x8(%ebp)$/;"	l
+f1	linklab/analyze/phase2.s	/^  f1:	90                   	nop$/;"	l
+f1	linklab/analyze/phase3.s	/^  f1:	eb 2f                	jmp    122 <do_phase+0xf8>$/;"	l
+f1	linklab/phase4.s	/^  f1:	67 53                	addr16 push %ebx$/;"	l
+f2	linklab/analyze/phase2.s	/^  f2:	90                   	nop$/;"	l
+f3	linklab/analyze/phase2.s	/^  f3:	90                   	nop$/;"	l
+f3	linklab/analyze/phase3.s	/^  f3:	c6 45 f7 38          	movb   $0x38,-0x9(%ebp)$/;"	l
+f3	linklab/phase4.s	/^  f3:	62 6f 48             	bound  %ebp,0x48(%edi)$/;"	l
+f3	linklab/phase4.s	/^  f3:	90                   	nop$/;"	l
+f4	linklab/analyze/phase2.s	/^  f4:	90                   	nop$/;"	l
+f4	linklab/phase4.s	/^  f4:	8b 45 08             	mov    0x8(%ebp),%eax$/;"	l
+f5	linklab/analyze/phase2.s	/^  f5:	90                   	nop$/;"	l
+f6	linklab/analyze/phase2.s	/^  f6:	90                   	nop$/;"	l
+f6	linklab/phase4.s	/^  f6:	77 58                	ja     150 <encode_1+0x1b>$/;"	l
+f7	linklab/analyze/phase2.s	/^  f7:	90                   	nop$/;"	l
+f7	linklab/analyze/phase3.s	/^  f7:	eb 29                	jmp    122 <do_phase+0xf8>$/;"	l
+f7	linklab/phase4.s	/^  f7:	5d                   	pop    %ebp$/;"	l
+f8	linklab/analyze/phase2.s	/^  f8:	90                   	nop$/;"	l
+f8	linklab/phase4.s	/^  f8:	7d 7a                	jge    174 <encode_1+0x3f>$/;"	l
+f8	linklab/phase4.s	/^  f8:	c3                   	ret    $/;"	l
+f9	linklab/analyze/phase2.s	/^  f9:	90                   	nop$/;"	l
+f9	linklab/analyze/phase3.s	/^  f9:	c6 45 f7 71          	movb   $0x71,-0x9(%ebp)\/\/q$/;"	l
+f9	linklab/phase4.s	/^  f9:	55                   	push   %ebp$/;"	l
+fa	linklab/analyze/phase2.s	/^  fa:	90                   	nop$/;"	l
+fa	linklab/phase4.s	/^  fa:	46                   	inc    %esi$/;"	l
+fa	linklab/phase4.s	/^  fa:	89 e5                	mov    %esp,%ebp$/;"	l
+false	reg.c	13;"	d	file:
+fb	linklab/analyze/phase2.s	/^  fb:	90                   	nop$/;"	l
+fb	linklab/phase4.s	/^  fb:	6a 75                	push   $0x75$/;"	l
+fc	linklab/analyze/phase2.s	/^  fc:	90                   	nop$/;"	l
+fc	linklab/phase4.s	/^  fc:	83 ec 10             	sub    $0x10,%esp$/;"	l
+fd	linklab/analyze/phase2.s	/^  fd:	90                   	nop$/;"	l
+fd	linklab/analyze/phase3.s	/^  fd:	eb 23                	jmp    122 <do_phase+0xf8>$/;"	l
+fd	linklab/phase4.s	/^  fd:	34 6e                	xor    $0x6e,%al$/;"	l
+fe	linklab/analyze/phase2.s	/^  fe:	90                   	nop$/;"	l
+ff	linklab/analyze/phase2.s	/^  ff:	90                   	nop$/;"	l
+ff	linklab/analyze/phase3.s	/^  ff:	c6 45 f7 39          	movb   $0x39,-0x9(%ebp)$/;"	l
+ff	linklab/phase4.s	/^  ff:	7f                   	.byte 0x7f$/;"	l
+ff	linklab/phase4.s	/^  ff:	8b 45 08             	mov    0x8(%ebp),%eax$/;"	l
+fmt_output	executale file/fmt_print.c	/^void fmt_output(int count,char fmt,char size,char *add){$/;"	f
+fmt_print	executale file/fmt_print.c	/^void fmt_print(char fmt,char size,char *haddr){$/;"	f
+for_size_print	PA/overload.h	/^void for_size_print(int count,char fmt,char size,uint8_t *add,int n){$/;"	f
+from	PA/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon10	file:
+from	PA/strtol.c	/^    char from,to,via;$/;"	m	struct:__anon11	file:
+from	executale file/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon5	file:
+fun	Lab/bomb/phase_4.c	/^int fun(int edx,int esi,int edi){$/;"	f
+fun	sources/phase_4.c	/^int fun(int edx,int esi,int edi){$/;"	f
+goto	PA/hanoi-nr.c	10;"	d	file:
+goto	executale file/hanoi-nr.c	10;"	d	file:
+gpr	PA/info.c	/^    }gpr[32];$/;"	m	struct:__anon6	typeref:union:__anon6::__anon7	file:
+guest_to_host	PA/overload.c	/^uint8_t* guest_to_host( uint32_t paddr ){return pmem + paddr -MBASE; }$/;"	f
+guest_to_host	PA/strtol.c	/^uint8_t* guest_to_host(paddr_t paddr){$/;"	f
+hanoi	PA/hanoi-nr.c	/^void hanoi(int n, char from, char to, char via) {$/;"	f
+hanoi	executale file/hanoi-nr.c	/^void hanoi(int n, char from, char to, char via) {$/;"	f
+hex2raw	Lab/buflab/answer/hex2raw.s	/^hex2raw:     file format elf32-i386$/;"	l
+host_to_guest	PA/overload.c	/^uint32_t host_to_guest( uint8_t *haddr ){return haddr - pmem +MBASE; }$/;"	f
+host_to_guest	PA/strtol.c	/^paddr_t host_to_guest(uint8_t* haddr){$/;"	f
+img	PA/overload.c	/^static uint32_t img[] = {$/;"	v	file:
+img	PA/x_print.c	/^static const uint32_t img[] = {$/;"	v	file:
+img	executale file/fmt_print.c	/^static unsigned int img[] = {$/;"	v	file:
+infile	Lab/bomb/bomb.c	/^FILE *infile;$/;"	v
+init_regex	reg.c	/^void init_regex() {$/;"	f
+init_sdb	reg.c	/^void init_sdb() {$/;"	f
+io_read	include/macro.h	86;"	d
+io_write	include/macro.h	91;"	d
+is_valid	PA/valid_num.c	/^    int is_valid;$/;"	m	struct:__anon9	file:
+isa_reg_display	PA/info.c	/^void isa_reg_display(void){$/;"	f
+isdef	include/debug_macro.h	51;"	d
+isdef	include/macro.h	50;"	d
+isdef	sources/isdef.c	6;"	d	file:
+judgeValidity	include/validN.h	/^void judgeValidity(ValidN *n,char* s){$/;"	f
+lea	Lab/buflab/attack code/assemble.s	/^lea   0x28(%esp),%ebp     #  add $0x28,%esp$/;"	l
+lea	linklab/analyze/assemble.s	/^lea   -0x18(%ebp),%eax$/;"	l
+lea	linklab/analyze/assemble.s	/^lea   -0xc(%ebp),%eax$/;"	l
+leave	Lab/buflab/attack code/assemble.s	/^leave $/;"	l
+leave	Lab/buflab/attack code/assemble.s	/^leave$/;"	l
+leave	linklab/analyze/assemble.s	/^leave$/;"	l
+likely	include/macro.h	81;"	d
+limited_rand	include/test.h	/^static int limited_rand( int limit ){$/;"	f
+limited_rand	rand.c	/^int limited_rand( int limit){$/;"	f
+main	Lab/bomb/bomb.c	/^int main(int argc, char *argv[])$/;"	f
+main	Lab/bomb/phase_4.c	/^int main(){$/;"	f
+main	PA/IFDEF.c	/^int main(){$/;"	f
+main	PA/fseek.c	/^int main(){$/;"	f
+main	PA/getopt.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/getopt_long.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/hanoi-nr.c	/^int main(){$/;"	f
+main	PA/info.c	/^int main(){$/;"	f
+main	PA/logic.c	/^int main() {$/;"	f
+main	PA/macro.c	/^int main(){$/;"	f
+main	PA/overload.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/panic.c	/^int main(){$/;"	f
+main	PA/rand.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/read_token.c	/^int main(int argc,char* argv){$/;"	f
+main	PA/regex.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	PA/regflags.c	/^int main(int argc, char *argv[]){$/;"	f
+main	PA/stoi.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/strtol.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/testN.c	/^int main(int argc, char *argv[]){$/;"	f
+main	PA/valid_num.c	/^int main(int argc,char *argv[]){$/;"	f
+main	PA/x_print.c	/^int main(){$/;"	f
+main	bit.c	/^int main(){$/;"	f
+main	executale file/fmt_print.c	/^int main(){$/;"	f
+main	executale file/hanoi-nr.c	/^int main(){$/;"	f
+main	executale file/x_print.c	/^int main(int argc,char *argv[]){$/;"	f
+main	include/reg.h	/^int main(int argc, char *argv[]) {$/;"	f
+main	linklab/link/main.c	/^int main(){$/;"	f
+main	main.c	/^int main(int argc,char *argv[]){$/;"	f
+main	parenthese.c	/^int main(int argc, char *argv[]){$/;"	f
+main	rand.c	/^int main( int argc, char*argv[]){$/;"	f
+main	reg.c	/^int main( int argc, char *agrv[]){$/;"	f
+main	sources/add.c	/^int main(){$/;"	f
+main	sources/bit.c	/^int main(){$/;"	f
+main	sources/buf.c	/^int main(){$/;"	f
+main	sources/fault.c	/^int main(){$/;"	f
+main	sources/isdef.c	/^int main(){$/;"	f
+main	sources/macro.c	/^int main(){$/;"	f
+main	sources/persistence.c	/^int main(int argc,char argv[]) {$/;"	f
+main	sources/phase_4.c	/^int main(){$/;"	f
+main	sources/print.c	/^int main (){$/;"	f
+make_token	reg.c	/^static bool make_token(char *e) {$/;"	f	file:
+makecookie	Lab/buflab/answer/makecookie.s	/^makecookie:     file format elf32-i386$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov   %esp,%ebp$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  $0x08049584,%eax$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  $0x31463136,%ecx$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  $0x46424434,%ecx$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  $0x556836fe,%ebx   #string(str)'s address to ebx \/\/$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  $0x61f14dbf,%eax$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  %ebx,0xc(%ebp)    #str=ebp->  string$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  %ecx,(%ebx )$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  %ecx,0x4(%ebx)$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov  %esp,%ebp$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov %eax,0x804d1a8   # global_value = cookie$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov %esp,%ebp$/;"	l
+mov	Lab/buflab/attack code/assemble.s	/^mov 0x804d1a0,%eax$/;"	l
+movb	Lab/buflab/attack code/assemble.s	/^movb $0x0,0x8(%ebx)$/;"	l
+movb	linklab/analyze/assemble.s	/^movb  $0x0,-0x10(%ebp)$/;"	l
+movb	linklab/analyze/assemble.s	/^movb  $0x0,-0x4(%ebp)$/;"	l
+movl	Lab/buflab/attack code/assemble.s	/^movl  $0x61f14dbf,%eax$/;"	l
+movl	linklab/analyze/assemble.s	/^movl  $0x00614a48,-0x14(%ebp)$/;"	l
+movl	linklab/analyze/assemble.s	/^movl  $0x36363977,-0xc(%ebp)  #puts(str)$/;"	l
+movl	linklab/analyze/assemble.s	/^movl  $0x37323530,-0x8(%ebp)$/;"	l
+movl	linklab/analyze/assemble.s	/^movl  $0x50534b79,-0x18(%ebp) #cmp:str$/;"	l
+n	PA/hanoi-nr.c	/^  int pc, n;$/;"	m	struct:__anon10	file:
+n	PA/strtol.c	/^    int pc,n;$/;"	m	struct:__anon11	file:
+n	executale file/hanoi-nr.c	/^  int pc, n;$/;"	m	struct:__anon5	file:
+name	reg.c	/^    const char *name;$/;"	m	struct:__anon2	file:
+nr_token	reg.c	/^static int nr_token __attribute__((used)) = 0;$/;"	v	file:
+paddr_t	include/sdb.h	10;"	d
+panic	include/debug_macro.h	79;"	d
+parse	PA/parse.c	/^int parse(char *args){$/;"	f
+parse	PA/read_token.c	/^void parse(char *str){$/;"	f
+parseAdd	PA/overload.c	/^static int  parseAdd(char *addr,ValidN *n ){$/;"	f	file:
+parse_args	reg.c	/^static int parse_args(char *args) {$/;"	f	file:
+parse_num	PA/valid_num.c	/^void parse_num(Valid_num *vn,char *s){$/;"	f
+pc	PA/hanoi-nr.c	/^  int pc, n;$/;"	m	struct:__anon10	file:
+pc	PA/info.c	/^    vaddr_t pc;$/;"	m	struct:__anon6	file:
+pc	PA/strtol.c	/^    int pc,n;$/;"	m	struct:__anon11	file:
+pc	executale file/hanoi-nr.c	/^  int pc, n;$/;"	m	struct:__anon5	file:
+pmem	PA/overload.c	/^static uint8_t pmem[MSIZE];$/;"	v	file:
+pmem	PA/strtol.c	/^static uint8_t pmem[MSIZE];$/;"	v	file:
+pmem	PA/x_print.c	/^static uint8_t pmem[MSIZE];$/;"	v	file:
+push	Lab/buflab/attack code/assemble.s	/^push %eax   # saved eip$/;"	l
+push	Lab/buflab/attack code/assemble.s	/^push %ebp   # saved esp$/;"	l
+push	Lab/buflab/attack code/assemble.s	/^push %ebp$/;"	l
+pushl	Lab/buflab/attack code/assemble.s	/^pushl $0x80495fe          #  saved eip$/;"	l
+pushl	Lab/buflab/attack code/assemble.s	/^pushl %ebp$/;"	l
+pushl	linklab/analyze/assemble.s	/^pushl %eax$/;"	l
+re	reg.c	/^static regex_t re[NR_REGEX] = {};$/;"	v	file:
+regex	PA/regex.c	/^    const char *regex;$/;"	m	struct:rule	file:
+regex	PA/regex.c	/^static regex_t regex[ NR_REGEX ] = {};$/;"	v	file:
+regex	include/reg.h	/^    const char *regex;$/;"	m	struct:rule
+regex	include/reg.h	/^static regex_t regex[ NR_REGEX ] = {};$/;"	v
+regex	reg.c	/^    const char *regex;$/;"	m	struct:rule	file:
+ret	Lab/buflab/attack code/assemble.s	/^ret $/;"	l
+ret	Lab/buflab/attack code/assemble.s	/^ret$/;"	l
+ret	PA/hanoi-nr.c	9;"	d	file:
+ret	executale file/hanoi-nr.c	9;"	d	file:
+ret	linklab/analyze/assemble.s	/^ret$/;"	l
+riscv32_CPU_state	PA/info.c	/^}riscv32_CPU_state;$/;"	t	typeref:struct:__anon6	file:
+rl_gets	PA/read_token.c	/^static char *rl_gets(){$/;"	f	file:
+rl_gets	include/test.h	/^static char *rl_gets(){$/;"	f
+rl_gets	reg.c	/^static char *rl_gets() {$/;"	f	file:
+rule	PA/regex.c	/^static struct rule {$/;"	s	file:
+rule	include/reg.h	/^static struct rule {$/;"	s
+rule	reg.c	/^static struct rule {$/;"	s	file:
+rules	PA/regex.c	/^} rules[] = {$/;"	v	typeref:struct:rule	file:
+rules	include/reg.h	/^} rules[] = {$/;"	v	typeref:struct:rule
+rules	reg.c	/^} rules[] = {$/;"	v	typeref:struct:rule	file:
+sdb_mainloop	reg.c	/^void sdb_mainloop() {$/;"	f
+select_fmt_print	PA/overload.h	/^void select_fmt_print(char fmt,char size,uint8_t *add){$/;"	f
+select_fmt_print	include/fmt_print.h	/^void select_fmt_print(char fmt,char size,uint8_t *add){$/;"	f
+setFmt	PA/overload.c	/^static int setFmt(char *cmd ,char *fmt,char *size){$/;"	f	file:
+sp	parenthese.c	/^int sp;$/;"	v
+str	include/debug_macro.h	8;"	d
+str	include/macro.h	8;"	d
+str	reg.c	/^    char str[32];$/;"	m	struct:token	file:
+str	sources/isdef.c	4;"	d	file:
+str_temp	include/debug_macro.h	7;"	d
+str_temp	include/macro.h	7;"	d
+str_temp	sources/isdef.c	3;"	d	file:
+sub	linklab/analyze/assemble.s	/^sub   $0x20,%esp$/;"	l
+swap	linklab/link/swap.c	/^void swap(){$/;"	f
+test	sources/isdef.c	13;"	d	file:
+test1	sources/isdef.c	14;"	d	file:
+test2	sources/isdef.c	15;"	d	file:
+test3	sources/isdef.c	16;"	d	file:
+test4	sources/isdef.c	17;"	d	file:
+to	PA/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon10	file:
+to	PA/strtol.c	/^    char from,to,via;$/;"	m	struct:__anon11	file:
+to	executale file/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon5	file:
+token	reg.c	/^typedef struct token {$/;"	s	file:
+token_type	PA/regex.c	/^    int token_type;$/;"	m	struct:rule	file:
+token_type	include/reg.h	/^    int token_type;$/;"	m	struct:rule
+token_type	reg.c	/^    int token_type;$/;"	m	struct:rule	file:
+tokens	reg.c	/^static Token tokens[32] __attribute__((used)) = {};$/;"	v	file:
+true	reg.c	12;"	d	file:
+type	reg.c	/^    int type;$/;"	m	struct:token	file:
+uint16_t	executale file/fmt_print.c	3;"	d	file:
+uint32_t	PA/info.c	3;"	d	file:
+uint32_t	executale file/fmt_print.c	4;"	d	file:
+uint64_t	executale file/fmt_print.c	5;"	d	file:
+uint8_t	executale file/fmt_print.c	2;"	d	file:
+unlikely	include/macro.h	82;"	d
+vaddr_t	PA/info.c	4;"	d	file:
+valid	include/validN.h	/^    int valid;$/;"	m	struct:__anon4
+value	PA/valid_num.c	/^    int value;$/;"	m	struct:__anon9	file:
+value	include/validN.h	/^    int value; \/\/the number's decimal value.$/;"	m	struct:__anon4
+via	PA/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon10	file:
+via	PA/strtol.c	/^    char from,to,via;$/;"	m	struct:__anon11	file:
+via	executale file/hanoi-nr.c	/^  char from, to, via;$/;"	m	struct:__anon5	file:
+x_print	PA/overload.h	/^void x_print(int count,char fmt,char size,uint8_t *add){$/;"	f
+x_print	PA/x_print.c	/^void x_print(int count,char fmt,char size,char *add){$/;"	f
+x_print	include/fmt_print.h	/^void x_print(int count,char fmt,char size,uint8_t *add){$/;"	f
